@@ -1,3 +1,4 @@
+UPDATED FOR NEW SEASON 05/07/24
 This is a fork of https://github.com/Snoogens101 ApexDMA im probably only gonna update offsets not add anything :D
 
 Copiest of pastas using https://github.com/Metick/DMALibrary and https://github.com/Nexilist/xap-client
