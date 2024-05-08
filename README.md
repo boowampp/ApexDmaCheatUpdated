@@ -15,21 +15,21 @@ Requires:
 - vmm.dll https://github.com/ufrisk/pcileech/releases/
 
 Config:  
-AimSticky=false // Sets if the Aim should "stick" to the target until you re-aim   
-AimFOV=10 // Sets the Aimbot FOV  
-AimSmooth=2.0 // Sets the Aimbot Smooth  
-AimSmoothMaxIncrease=0.2 // Sets how many percent the Smoothing is allowed to increase as you get closer to the Target  
-AimRecoilCompensation=1.11 // Decides how much recoil you should have. 1.0 is no recoil.   
+AimSticky=true // Sets if the Aim should "stick" to the target until you re-aim   
+AimFOV=5 // Sets the Aimbot FOV  
+AimSmooth=4 // Sets the Aimbot Smooth  
+AimSmoothMaxIncrease=0 // Sets how many percent the Smoothing is allowed to increase as you get closer to the Target  
+AimRecoilCompensation=1.4 // Decides how much recoil you should have. 1.0 is no recoil.   
 AimBotKey=2  
 AimTriggerKey=5  
 AimFlickKey=6  
 GlowItem=true  
-GlowItemRarity=35  
-ResolutionX=2560 // Your Ingame Resolution  
-ResolutionY=1440 // Your Ingame Resolution  
+GlowItemRarity=36  
+ResolutionX=1920 // Your Ingame Resolution  
+ResolutionY=1080 // Your Ingame Resolution  
 FOV=110 // Your Ingame Field of View  
-KmboxType=Net // Your Kmbox type - either Net or BPro  
-KmboxIP=192.168.2.188 // Your Kmbox Net IP - shown on its display  
-KmboxPort=8336 // Your Kmbox Net Port - shown on its display  
-KmboxUUID=24B75054 // Your Kmbox Net UUID - shown on its display  
+KmboxType=BPro // Your Kmbox type - either Net or BPro  
+KmboxIP= // Your Kmbox Net IP - shown on its display  
+KmboxPort= // Your Kmbox Net Port - shown on its display  
+KmboxUUID= // Your Kmbox Net UUID - shown on its display  
 KmboxComPort=3 // Your Kmbox B+ Pro COM Port  
