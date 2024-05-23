@@ -63,7 +63,7 @@ constexpr uint64_t OFF_RELOADING = 0x159a;						  //[RecvTable.DT_WeaponX_LocalW
 constexpr uint64_t OFF_GLOW_HIGHLIGHTS = 0xade4bc0;               //HighlightSettings
 constexpr uint64_t OFF_ITEM_ID = 0x1558;						  //[RecvTable.DT_PropSurvival].m_customScriptInt
 constexpr uint64_t OFF_GLOW_ENABLE = 0x28C;                       //updated OFFSET_GLOW_CONTEXT_ID 7 = enabled, 2 = disabled
-constexpr uint64_t OFF_GLOW_THROUGH_WALL = 0x26C;                 //Script_Highlight_SetVisibilityType updated 2 = enabled, 5 = disabled
+constexpr uint64_t OFF_GLOW_THROUGH_WALL = 0x26c;                 //Script_Highlight_SetVisibilityType updated 2 = enabled, 5 = disabled
 constexpr uint64_t OFF_GLOW_FIX = 0x268;						  //
 constexpr uint64_t OFF_GLOW_HIGHLIGHT_ID = 0x028d;                //[RecvTable.DT_HighlightSettings].m_highlightGenericContexts [DT_HighlightSettings].m_highlightServerActiveStates    
 constexpr uint64_t OFF_GLOW_HIGHLIGHT_TYPE_SIZE = 0x34;			  //
