@@ -1,13 +1,13 @@
 #pragma once
 
-constexpr uint64_t OFF_LEVEL = 0x17c6120;                         //[Miscellaneous].LevelName
-constexpr uint64_t OFF_LOCAL_PLAYER = 0x2259868;                  //[Miscellaneous].LocalPlayer
-constexpr uint64_t OFF_ENTITY_LIST = 0x01eaac20 + 0xA8;           //[ConVars].gamepad_aim_assist_melee # [Miscellaneous].cl_entitylist
+constexpr uint64_t OFF_LEVEL = 0x17c7160;                         //[Miscellaneous].LevelName
+constexpr uint64_t OFF_LOCAL_PLAYER = 0x225a8a8;                  //[Miscellaneous].LocalPlayer
+constexpr uint64_t OFF_ENTITY_LIST = 0x01eabc60 + 0xA8;           //[ConVars].gamepad_aim_assist_melee # [Miscellaneous].cl_entitylist
 
-constexpr uint64_t OFF_NAME_LIST = 0xc790230;                    //[Miscellaneous].NameList
+constexpr uint64_t OFF_NAME_LIST = 0xc7912b0;                    //[Miscellaneous].NameList
 constexpr uint64_t OFF_NAME_INDEX = 0x38;                         //[RecvTable.DT_BaseEntity].??
 
-constexpr uint64_t OFF_VIEWRENDER = 0x74dbfa8;                    //[Miscellaneous].ViewRender
+constexpr uint64_t OFF_VIEWRENDER = 0x74dd028;                    //[Miscellaneous].ViewRender
 constexpr uint64_t OFF_VIEWMATRIX = 0x11a350;                     //[Miscellaneous].ViewMatrix
 
 constexpr uint64_t OFF_HEALTH = 0x0318;                           //[RecvTable.DT_Player].m_iHealth
@@ -16,14 +16,14 @@ constexpr uint64_t OFF_SHIELD = 0x01a0;                           //[RecvTable.D
 constexpr uint64_t OFF_MAXSHIELD = 0x01a4;                        //[RecvTable.DT_BaseEntity].m_shieldHealthMax
 constexpr uint64_t OFF_PLATFORM_UID = 0x2548;					  //[RecvTable.DT_Player].m_platformUserId
 
-constexpr uint64_t OFF_INATTACK = 0x074dd240;                     //[Buttons].in_attack
-constexpr uint64_t OFF_IN_ZOOM = 0x074dd3c0;					  //[Buttons].in_zoom
-constexpr uint64_t OFF_IN_TOGGLE_DUCK = 0x074dd260;				  //[Buttons].in_toggle_duck
-constexpr uint64_t OFF_IN_FORWARD = 0x074dd170;					  //[Buttons].in_forward
-constexpr uint64_t OFF_IN_JUMP = 0x074dd320;					  //[Buttons].in_jump 
-constexpr uint64_t OFF_IN_DUCK = 0x074dd420;					  //[Buttons].in_duck 
-constexpr uint64_t OFF_IN_BACKWARD = 0x074dd198;				  //[Buttons].in_backward
-constexpr uint64_t OFF_IN_USE = 0x074dd3a0;					      //[Buttons].in_use
+constexpr uint64_t OFF_INATTACK = 0x074de2a0;                     //[Buttons].in_attack
+constexpr uint64_t OFF_IN_ZOOM = 0x074de430;					  //[Buttons].in_zoom
+constexpr uint64_t OFF_IN_TOGGLE_DUCK = 0x074de2e0;				  //[Buttons].in_toggle_duck
+constexpr uint64_t OFF_IN_FORWARD = 0x074de1f0;					  //[Buttons].in_forward
+constexpr uint64_t OFF_IN_JUMP = 0x074de3a0;					  //[Buttons].in_jump 
+constexpr uint64_t OFF_IN_DUCK = 0x074de4a0;					  //[Buttons].in_duck 
+constexpr uint64_t OFF_IN_BACKWARD = 0x074de218;				  //[Buttons].in_backward
+constexpr uint64_t OFF_IN_USE = 0x074de420;					      //[Buttons].in_use
 
 constexpr uint64_t OFF_IN_DUCKSTATE = 0x29e0;				      //[DataMap.C_Player].m_duckState 
 constexpr uint64_t OFF_WALLRUNSTART = 0x3594;					  //[DataMap.C_Player].m_wallRunStartTime
@@ -60,7 +60,7 @@ constexpr uint64_t OFF_TARGETZOOMFOV = 0x15d0 + 0x00bc;           //[RecvTable.D
 constexpr uint64_t OFF_WEAPON_AMMO = 0x1580;                      //[RecvTable.DT_WeaponX_LocalWeaponData].m_ammoInClip
 constexpr uint64_t OFF_RELOADING = 0x159a;						  //[RecvTable.DT_WeaponX_LocalWeaponData].m_bInReload
 
-constexpr uint64_t OFF_GLOW_HIGHLIGHTS = 0xade4bc0;               //HighlightSettings
+constexpr uint64_t OFF_GLOW_HIGHLIGHTS = 0xade5c40;               //HighlightSettings
 constexpr uint64_t OFF_ITEM_ID = 0x1558;						  //[RecvTable.DT_PropSurvival].m_customScriptInt
 constexpr uint64_t OFF_GLOW_ENABLE = 0x28C;                       //updated OFFSET_GLOW_CONTEXT_ID 7 = enabled, 2 = disabled
 constexpr uint64_t OFF_GLOW_THROUGH_WALL = 0x26c;                 //Script_Highlight_SetVisibilityType updated 2 = enabled, 5 = disabled
