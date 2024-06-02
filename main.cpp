@@ -35,7 +35,6 @@ Spectator* Spectators = new Spectator(Players, Myself);
 Misc* Miscellanous = new Misc(Myself);
 ActionHelper* AHP = new ActionHelper(Myself);
 
-//»ñÈ¡µØÍ¼Ãû£¬±¾µØÍæ¼Ò»ùÖ·£¬·¢¹â»ùÖ·µÈ
 void MiscBaseScatter(Level* map, LocalPlayer* myself, Camera* gameCamera, Sense* esp) {
 	// Create scatter handle
 	auto handle = mem.CreateScatterHandle();
@@ -67,7 +66,6 @@ void MiscBaseScatter(Level* map, LocalPlayer* myself, Camera* gameCamera, Sense*
 	mem.CloseScatterHandle(handle);
 }
 
-// »ñÈ¡ËùÓĞÍæ¼Ò»ùÖ·Ò»´Î
 void PlayerBasePointerScatter(std::vector<Player*>& players) {
     // Create scatter handle
     auto handle = mem.CreateScatterHandle();
@@ -85,7 +83,6 @@ void PlayerBasePointerScatter(std::vector<Player*>& players) {
     mem.CloseScatterHandle(handle);
 }
 
-// »ñÈ¡ËùÓĞÍæ¼ÒµÄ¶ÓÎéidºÍÊÇ·ñplayer¡¢nameIndex
 void ScatterReadTeamAndName(std::vector<Player*>& players) {
     // Create scatter handle
     auto handle = mem.CreateScatterHandle();
@@ -144,7 +141,7 @@ void ScatterReadPlayerValidity(std::vector <Player*>& players) {
         p->ValidCheck();
     }
 }
-//»ñÈ¡Ã¿¸öÍæ¼ÒµÄÊôĞÔ
+//è·å–æ¯ä¸ªç©å®¶çš„å±æ€§
 void ScatterReadPlayerAttributes(std::vector<Player*>& players) {
     // Create scatter handle
     auto handle = mem.CreateScatterHandle();
@@ -158,7 +155,7 @@ void ScatterReadPlayerAttributes(std::vector<Player*>& players) {
         }
 
         // Verify that the BasePointer is not 0 before adding scatter read requests
-        //ÊµÌå»ùÖ·ÓĞĞ§ÇÒÊÇÍæ¼ÒÔò»ñÈ¡ ÊÇ·ñËÀÍö ÊÇ·ñµ¹µØ ËÙ¶È ·¢¹âÏà¹Ø Visibility Yaw
+        //å®ä½“åŸºå€æœ‰æ•ˆä¸”æ˜¯ç©å®¶åˆ™è·å– æ˜¯å¦æ­»äº¡ æ˜¯å¦å€’åœ° é€Ÿåº¦ å‘å…‰ç›¸å…³ Visibility Yaw
         if (mem.IsValidPointer(player->BasePointer)) {
             if (player->IsPlayer()) {
                 // Scatter read request for IsDead
@@ -197,7 +194,7 @@ void ScatterReadPlayerAttributes(std::vector<Player*>& players) {
                 player->IsDead = false;
                 player->IsKnocked = false;
             }
-            //Èç¹ûÊÇÔÚÉä»÷³¡µÄ¼ÙÈË»òÕßÊÇÍæ¼Ò£¬¶ÁÈ¡ÊµÌåÎ»ÖÃ£¬ÑªÁ¿£¬»¤¼×£¬Ä£ĞÍ»ùÖ·,¹Ç÷À»ùÖ·
+            //å¦‚æœæ˜¯åœ¨å°„å‡»åœºçš„å‡äººæˆ–è€…æ˜¯ç©å®¶ï¼Œè¯»å–å®ä½“ä½ç½®ï¼Œè¡€é‡ï¼ŒæŠ¤ç”²ï¼Œæ¨¡å‹åŸºå€,éª¨éª¼åŸºå€
             if (player->IsDummy() && Map->IsFiringRange || player->IsPlayer()) {
                 // Scatter read request for LocalOrigin
                 uint64_t localOriginAddress = player->BasePointer + OFF_LOCAL_ORIGIN;
@@ -269,7 +266,7 @@ void UpdateCore() {
 
             // Dummy Fix
             if (Map->IsFiringRange) {
-                static auto lastExecTime = std::chrono::steady_clock::now() - std::chrono::seconds(5); // È·±£µÚÒ»´ÎÖ´ĞĞÊ±²»»áÁ¢¼´Ö´ĞĞ
+                static auto lastExecTime = std::chrono::steady_clock::now() - std::chrono::seconds(5); // ç¡®ä¿ç¬¬ä¸€æ¬¡æ‰§è¡Œæ—¶ä¸ä¼šç«‹å³æ‰§è¡Œ
 
                 // Check if 5 seconds have passed since the last execution
                 auto currentTime = std::chrono::steady_clock::now();
