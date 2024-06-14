@@ -1,7 +1,11 @@
-OPEN A ISSUE IF THE OFFSETS ARE OUTDATED AND I WILL UPDATE THEM !
+im no longer updating
 
 
-UPDATED FOR NEW SEASON 05/07/24
+
+
+
+
+.
 
 This is a fork of https://github.com/Snoogens101 ApexDMA im probably only gonna update offsets not add anything :D
 
